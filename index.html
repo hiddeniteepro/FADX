@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FADX — The Algorithmic Trading Edge</title>
+  <meta name="description" content="FADX is your AI-powered trading co-pilot founded by FEMX & DURELL, combining AI analysis, strict risk controls, and personalized learning." />
+  
+  <!-- LINK TO CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Background Canvas -->
+  <canvas id="background-canvas"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#hero" class="logo">FADX</a>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="nav">
+        <ul class="nav-list desktop-only">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <!-- Mobile menu button -->
+        <button id="mobile-toggle" class="icon-btn mobile-only" aria-label="Open menu">
+          <!-- SVG for a clean menu icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <button id="mobile-close" class="icon-btn" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="container">
+      <ul>
+        <li><a href="#hero" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li>
+          <a href="#cta" class="btn primary-btn" style="width:100%; margin-top:10px;">Join Telegram</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <p class="kicker">THE ALGORITHM IS YOUR EDGE</p>
+        <h1 class="hero-title">
+          Forge Your Path With An <span class="accent">AI-Powered Trading Co-Pilot.</span>
+        </h1>
+        <p class="lead">
+          FADX, founded by FEMX & DURELL, delivers institutional-grade precision, strict risk management,
+          and personalized learning right to your fingertips. Trade smarter, not harder.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#services" class="btn primary-btn">Explore Services</a>
+          <a href="https://t.me/fadxco1" class="btn outline-btn">Join Telegram Today</a>
+        </div>
+
+        <div class="hero-media">
+          <!-- UPDATED: Pointing to the local image folder -->
+          <img src="./images/interface-mockup.jpg" alt="FADXco Trading Interface Mockup" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="section-title">01 / OUR MISSION</p>
+          <h3>Built by Traders, Empowered by AI.</h3>
+          <p>
+            FADX was born from the need for a truly disciplined and personalized trading system. Founders **FEMX** &amp; **DURELL** realized that generic alerts were insufficient. We developed an AI that not only analyzes the market with precision but also learns your personal risk tolerance and preferred strategies.
+          </p>
+          <p>
+            Our core function is to eliminate emotional decisions. FADX enforces your rules—from strict R:R ratios to automatic protection against market manipulation—ensuring your discipline is maintained 24/7.
+          </p>
+          <p class="motto">Motto: **TRADING WITH YOU 🤝**</p>
+        </div>
+
+        <div class="about-media">
+          <!-- Wrapper for positioning the logo relative to the main image -->
+          <div class="media-wrapper">
+            <!-- UPDATED: Pointing to the local image folder -->
+            <img src="./images/team-illustration.jpg" alt="FADX Team Illustration" />
+
+            <!-- LOGO OVERLAY -->
+            <div class="about-logo-overlay">
+              <!-- UPDATED: Pointing to the local image folder -->
+              <img src="./images/fadx-logo.png" alt="FADX Logo" class="actual-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (Core Services / Features) -->
+    <section id="services" class="section" style="background-color: var(--color-panel);">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-title">02 / CORE FUNCTIONALITY</p>
+          <h2 class="section-headline">Precision Tools for the Modern Trader.</h2>
+        </div>
+
+        <div class="grid-3">
+          <!-- Card 1: AI Technical Analysis -->
+          <article class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 10V18C3 19.1046 3.89543 20 5 20H19C20.1046 20 21 19.1046 21 18V10M17 14L12 9L7 14M12 9V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h4>AI Technical Analysis</h4>
+            <p>Instant, detailed analysis of any chart image you send via Telegram. Get key levels, patterns, and predicted volatility on demand.</p>
+          </article>
+
+          <!-- Card 2: Custom Strategy Execution -->
+          <article class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 12L12 9M12 9L9 12M12 9V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h4>Disciplined Risk Controls</h4>
+            <p>Hard-code your non-negotiables: R:R ratios, auto-breakeven triggers, and custom stop-loss protocols. FADX enforces the rules.</p>
+          </article>
+
+          <!-- Card 3: Fundamental Integration -->
+          <article class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.5 12H21.5M12 2.5C14.7778 5.7591 16.1111 8.8752 16.1111 12C16.1111 15.1248 14.7778 18.2409 12 21.5M12 21.5C9.22222 18.2409 7.88889 15.1248 7.88889 12C7.88889 8.8752 9.22222 5.7591 12 2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h4>Real-Time Fundamental Data</h4>
+            <p>Validate technical setups with current macro news and chain metrics. Get a complete, grounded market view before every entry.</p>
+          </article>
+
+          <!-- Card 4: Personalized Learning -->
+          <article class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 21C4 17.6863 7.58172 15 12 15C16.4183 15 20 17.6863 20 21H4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h4>Personalized AI Coaching</h4>
+            <p>Interactive chat sessions to master new concepts and review past trades. FADX adapts its teaching style to your learning pace.</p>
+          </article>
+
+          <!-- Card 5: Chat Control -->
+          <article class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15C21 16.6569 18.2843 18 14.9996 18H5C3.89543 18 3 17.1046 3 16V5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 10H17M7 14H12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h4>Actionable Chat Commands</h4>
+            <p>Manage all settings, adjust risk, and initiate trades directly via simple commands in your private Telegram chat interface.</p>
+          </article>
+
+          <!-- Card 6: Local Language Preference -->
+          <article class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2.5 12H21.5M12 2.5C14.7778 5.7591 16.1111 8.8752 16.1111 12C16.1111 15.1248 14.7778 18.2409 12 21.5M12 21.5C9.22222 18.2409 7.88889 15.1248 7.88889 12C7.88889 8.8752 9.22222 5.7591 12 2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h4>Localized Language</h4>
+            <p>Communicate with FADX in your preferred regional dialect of English for the clearest, most natural, and error-free interactions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN + CTA -->
+    <section id="cta" class="section" style="text-align:center; padding: 60px 0;">
+      <div class="container">
+        <h3 class="section-headline" style="font-size: 2.5rem; margin-bottom: 10px;">Ready to stop guessing and start executing?</h3>
+        <p class="lead" style="margin-bottom: 30px;">Join the exclusive FADX community and transform your trading discipline today.</p>
+        <div class="hero-ctas">
+          <a href="https://t.me/fadxco1" class="btn primary-btn">Join FADX Telegram</a>
+          <a href="https://chat.whatsapp.com/F99FrVurCEwKMBOa6CCnfs?mode=wwt" class="btn outline-btn">Speak to Founders</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (Simple Form) -->
+    <section id="contact" class="section" style="background-color: var(--color-panel);">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-title">03 / CONNECT</p>
+          <h2 class="section-headline">Get In Touch With The Team.</h2>
+        </div>
+
+        <form id="contactForm" class="contact-form" style="max-width: 700px; margin: 0 auto;">
+          <div class="form-grid" style="display: grid; gap: 20px;">
+            <label style="grid-column: 1 / -1;">
+              <span style="display: block; color: var(--color-muted); margin-bottom: 5px;">Your Name</span>
+              <input type="text" name="name" required placeholder="Jane Trader" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text);" />
+            </label>
+
+            <label>
+              <span style="display: block; color: var(--color-muted); margin-bottom: 5px;">Email</span>
+              <input type="email" name="email" required placeholder="you@example.com" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text);" />
+            </label>
+
+            <label>
+              <span style="display: block; color: var(--color-muted); margin-bottom: 5px;">Telegram Handle (Optional)</span>
+              <input type="text" name="telegram" placeholder="@YourHandle" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text);" />
+            </label>
+
+            <label style="grid-column: 1 / -1;">
+              <span style="display: block; color: var(--color-muted); margin-bottom: 5px;">Message</span>
+              <textarea name="message" rows="5" required placeholder="How can FADX help you achieve your trading goals?" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text);"></textarea>
+            </label>
+          </div>
+
+          <div class="form-actions" style="display: flex; gap: 15px; margin-top: 20px;">
+            <button type="submit" class="btn primary-btn">Send Message</button>
+            <button type="button" id="clearForm" class="btn outline-btn" style="color: var(--color-muted); border-color: var(--color-border);">Clear Form</button>
+          </div>
+
+          <p id="formStatus" style="margin-top: 15px; font-weight: 600; color: var(--color-accent);"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-compact">FADX</div>
+      <p class="muted-text">© 2025 FADX. The Algorithmic Edge. All Rights Reserved. Not financial advice.</p>
+    </div>
+  </footer>
+
+  <!-- LINK TO JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
+
